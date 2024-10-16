@@ -14,10 +14,14 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <header className="App-header">
+        
         <button onClick={toggleTheme} className="theme-toggle-btn">
           {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         </button>
+        
       </header>
+      {/* enter the text here */}
+      <p>heheifjdsfwbe </p>
     </div>
   );
 }
