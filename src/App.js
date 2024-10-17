@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import littlefoot from 'littlefoot';
 import 'littlefoot/dist/littlefoot.css'; // Import Littlefoot styles
-
+import InteractiveFootnotes from './footnote';
 
 function App() {
 
@@ -25,7 +25,6 @@ function App() {
  
 
   return (
-    
 
         <div className={`App ${theme}`}>
         <header className="App-header">
@@ -52,12 +51,7 @@ function App() {
 
       <div className="section">
         <h2>Littlefoot.js</h2>
-        <p>
-          <a href="#fn:3" id="fnref:3" data-footnote-ref>Littlefoot.js</a> is a lightweight alternative, focusing on performance and simplicity. It provides responsive popovers that only load on demand, ensuring faster page loads and smooth operation on mobile devices.
-        </p>
-        <p>
-          While lighter in size, <a href="#fn:4" id="fnref:4" data-footnote-ref>Littlefoot.js</a> retains much of the functionality needed to create a modern, engaging footnote experience, especially on small screens.
-        </p>
+        <InteractiveFootnotes />
       </div>
 
      
@@ -70,16 +64,9 @@ function App() {
           <li className="footnote" id="fn:2">
             <p>Bigfoot.js customization includes hover or click triggers, custom styling, and more. <a href="https://bigfootjs.com" target="_blank" rel="noreferrer">Read about the options ↩</a></p>
           </li>
-          <li className="footnote" id="fn:3">
-            <p>Littlefoot.js: A lightweight footnote library optimized for mobile devices. <a href="https://littlefoot.js.org/" target="_blank" rel="noreferrer">Learn more ↩</a></p>
-          </li>
-          <li className="footnote" id="fn:4">
-            <p>Littlefoot.js focuses on performance, making it ideal for sites where speed and mobile usability are key. <a href="https://littlefoot.js.org/" target="_blank" rel="noreferrer">Read about Littlefoot ↩</a></p>
-          </li>
         </ol>
       </div>
     </div>
-        <p>test </p>
       </div>
   );
 }
