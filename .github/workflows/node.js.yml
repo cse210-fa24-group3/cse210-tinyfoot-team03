@@ -25,10 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install --detectOpenHandles
+      run: npm install --save-dev @babel/plugin-transform-private-property-in-object
 
     - name: Run the tests
-      run: npm test --detectOpenHandles
+      run: npm test 
 
     - name: Build
       run: npm run build
