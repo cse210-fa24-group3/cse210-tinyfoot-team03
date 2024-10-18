@@ -9,20 +9,20 @@ const Footnote = ({ id, content }) => {
   );
 };
 
-const FootnoteList = ({ footnotes }) => {
-  return (
-    <div className="footnotes">
-      <h2>Footnotes</h2>
-      <ol>
-        {footnotes.map((footnote, index) => (
-          <li key={index} id={`fn${index + 1}`}>
-            {footnote}
-          </li>
-        ))}
-      </ol>
-    </div>
-  );
-};
+// const FootnoteList = ({ footnotes }) => {
+//   return (
+//     <div className="footnotes">
+//       <h2>Footnotes</h2>
+//       <ol>
+//         {footnotes.map((footnote, index) => (
+//           <li key={index} id={`fn${index + 1}`}>
+//             {footnote}
+//           </li>
+//         ))}
+//       </ol>
+//     </div>
+//   );
+// };
 
 const InteractiveFootnotes = () => {
   const footnotes = [
