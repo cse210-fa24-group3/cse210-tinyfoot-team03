@@ -3,6 +3,7 @@ import './App.css';
 import littlefoot from 'littlefoot';
 import 'littlefoot/dist/littlefoot.css'; // Import Littlefoot styles
 import InteractiveFootnotes from './footnote';
+import { Sun, Moon } from 'react-feather';
 
 function App() {
 
@@ -29,8 +30,8 @@ function App() {
         <div className={`App ${theme}`}>
         <header className="App-header">
           
-          <button onClick={toggleTheme} className="theme-toggle-btn">
-            {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+          <button onClick={toggleTheme} className="theme-toggle-btn" style={{ margin: '1rem', float: 'right', border: 'none', background: 'transparent', cursor: 'pointer' }}>
+            {theme === 'light' ? <Sun color="#4b0082" size={24} /> : <Moon color="#FFD700" size={24} />}
           </button>
           
         </header>
