@@ -25,10 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: cd src && npm install --save-dev @babel/plugin-proposal-private-property-in-object
+      run: npm install --save-dev @babel/plugin-proposal-private-property-in-object --legacy-peer-deps
 
     - name: Run the tests
-      run: cd src && npm test 
+      run: npm test 
 
     - name: Build
-      run: cd src && npm run build
+      run: npm run build
