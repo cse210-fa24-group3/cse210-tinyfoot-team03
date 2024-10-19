@@ -1,0 +1,145 @@
+# Meeting Notes
+## 10/13
+- Bigfoot Team
+    - Venu
+    - Aryan
+    - Krithika
+    - (Sneha)
+- Littlefoot Team
+    - Amy
+    - Andrew
+    - Keqian
+    - Sneha
+- To do for both teams
+    - Setting up the environment locally
+    - Analyze the repository
+        - Design decisions
+        - code organization and quality
+        - code pattern
+        - language use
+        - repo organization and quality
+        - tool quality
+    - Changes to be decided meeting
+    - Working on the changes
+    - Forking the repo
+    - Writing the review doc
+    - Hosting the website
+
+## 10/14
+- Issues noticed in Littlefoot
+    - Documentation could be better - Full code examples instead of snippets. 
+    - Highlighting features
+        - Could highlight related text in the main document when the popup is open
+    - Include footnote numbering within the actual footnote popup
+        - The number(order of the footnote) will show up at the beginning of the context
+        - Changed under setting.ts in contentTempate, add <% number %>. Before <% content %>
+    - Easier preset options for customization
+    - Click - again - stay highlighted → de-highlight
+        - Clicking the button to minimize the footnote leaves the button highlighted, dehighlight it
+        - Littlefoot.css checks the littlefoot__button for the focus class/tag in addition to the active, is-active, and hover attributes. Remove this check 
+    - Can change scroll functionality to disappear when you scroll
+    - Can correct anything malfunctioning that you notice as you go
+    - Small CSS changes
+        - Make the footnote button size smaller
+- Littlefoot Action Items
+    - Include footnote numbering within the actual footnote popup (Keqian)
+    - Click - again - stay highlighted - de-highlight (Amy)
+    - Small CSS changes like button size and color (Sneha)
+    - Documentation (Andrew)
+
+## 10/16 12pm
+- We will split in between building tinyfoot and documentation
+    - Tinyfoot Development
+        - Keqian
+        - Aryan 
+        - Venu
+        - (Sneha)
+    - Design Doc and Documentation
+        - Andrew
+        - Krithika
+        - Amy
+        - Sneha
+- Create and submit github organization
+    - Create issues and assign tasks within the git repo
+    - Make sure everyone’s efforts are visible
+    - Keep the repo clean, do not need unnecessary files
+    - Include architecture and design decisions
+    - Keep a design doc in the organization
+    - Include diagrams for design decisions
+    - Make sure the TA is a member of the organization and git repos
+- Littlefoot
+    - Sneha will look at the pull request issue Amy is having with not being part of the Veracel app organization
+    - Andrew will move his current littlefoot documentation
+    - Amy will update the test.html for better filepaths and hover delay
+- Documentation
+    - Make sure all documentation is pulled out of the git repo and into the organization so that they are extra visible
+        - Littlefoot and Bigfoot documentation should have separate links in the org for this
+        - 3 repos, 3 reviews, final doc in here for now
+    - Architecture Decisions should have a separate doc 
+        - Dev team should leave notes for documentation team on the decisions they make so they can be included
+    - Create simple flowcharts on figma that show clearly what we are doing
+    - React may generate some automatic documentation
+- Try to get dev and doc done before class Thursday
+    - Dev
+        - Push dev to the end of today if at all possible, 7pm
+        - Move deployment from Veracel to GitPages
+        - Tinyfoot Workflow
+            - Incorporate previous changes (Venu and Keqian)
+                - Implement the previous footnotes in the react app
+            - New features
+                - Dark mode (Aryan)
+                - Color changes
+                - Highlighting
+    - Doc
+        - Finish littlefoot and bigfoot documentation today
+        - Finish diagrams for tinyfoot and ADR today, but allow for changes after dev
+        - Andrew
+            - Import the littlefoot document to the new repo
+            - Add screenshots	
+        - Amy
+            - Sneha will figure out the format for the ADR and send it, then start on it
+
+## 10/16 8:30pm
+- Krithika is going to do one final review with the Bigfoot team for the bigfoot documentation to finalize
+- Andrew is going to include Keqian’s work in the documentation and make final adjustments to screenshots and organization
+- Amy is working on ADR for React, but waiting on more code from dev team to start additional ones
+- Keqian has finished the numbers for littlefoot and is still working on incorporating littlefoot into tinyfoot
+    - Troubleshooting in Meeting
+- Darkmode has been implemented by Aryan, Venu is having issues seeing the toggle button
+    - Troubleshooting in Meeting
+- Keqian will do a PR for the littlefoot numbers and resolve merge conflicts
+- Need to host all 3 parts on github pages
+- 1:30-2:30pm meeting tomorrow
+
+## 10/17 1:30pm
+- Updates
+    - Sneha
+        - Has completed implementation of little foot inside of tiny foot
+        - Has been too busy to do littlefoot documentation at this time
+        - Has made the buttons herself
+    - Amy
+        - Has finished the React ADR, needs to add to the google doc and the admin folder
+    - Andrew
+        - Still Finalizing
+    - Venu has pushed all her work
+        - Struggling with the 2 footer issue in bigfoot
+    - Aryan having issues with deployment and getting verified
+        - Sneha will submit an application
+        - Thinks there may be a tag missing somewhere with some different syntax
+- Github Repo Folders
+    - The folders need to be named according to instructions
+    - Dev team should look at using the demo and div folders
+- Team Analysis/Retrospective (Amy and Andrew)
+    - Finish tonight
+    - Wrote Team Thoughts in Group introductions document and reviewed as a group
+
+## 10/18 5:00pm
+- Amy
+    - Checked in on writing an ADR for Netlify and how to write the authors.
+    - Will finish off the ADRs, push them, and go over the review that Andrew pushed
+- Andrew
+    - Pushed an initial version of the team review
+    - Will need to move the review document to a new folder
+- Krithika and Venu
+    - Done with tinyfoot changes
+- Send updates by tonight to make submission today
