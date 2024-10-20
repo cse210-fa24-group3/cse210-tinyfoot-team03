@@ -27,8 +27,8 @@ jobs:
 
       - name: Build
         run: npm run build
-          
-      — name: “Deployed site” 
+        
+      - name: “Deployed site” 
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/67146caf08647761fcb79893
 
       
