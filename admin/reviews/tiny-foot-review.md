@@ -1,6 +1,9 @@
 # TinyFoot Code Review
 <div style="text-align: right">Team Review</div>
 
+ [[Tinyfoot Demo](https://tinyfoot3.netlify.app/)]
+
+
 ## 1. Architecture Overview
 - TinyFoot implements a hybrid architecture combining vanilla JavaScript and React components
 - Core structure consists of:
