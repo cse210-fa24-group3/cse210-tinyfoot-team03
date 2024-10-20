@@ -1,14 +1,9 @@
 # Tinyfoot
 [![CI/CD](https://github.com/cse210-fa24-group3/tiny_foot/actions/workflows/node.js.yml/badge.svg)](https://github.com/cse210-fa24-group3/tiny_foot/actions/workflows/node.js.yml)
 
-## Demo
- [[Tinyfoot Demo](https://tinyfoot3.netlify.app/)]
+[[Tinyfoot Demo](https://tinyfoot3.netlify.app/)]
 
- ## Tinyfoot Overview
- Drawn from the Tinyfoot Review Document.
- [[tinyfoot-review.md](https://github.com/cse210-fa24-group3/tiny_foot/tree/main/admin/reviews)]
-
- ### 1. Architecture Overview
+## 1. Architecture Overview
 - TinyFoot implements a hybrid architecture combining vanilla JavaScript and React components
 - Core structure consists of:
   - React Components: Handle UI rendering and state management 
@@ -17,23 +12,34 @@
 - Architecture leverages React's component-based structure while maintaining LittleFoot's core footnote functionality
 - Uses React's Context API for state management across components
 
-### 2. Design Decisions
+## 2. Design Decisions
 - Pattern: Combines React components with module pattern
 - Modularity: 
   - React Components:
-    - `FootnoteProvider`: Context provider for footnote state
-    - `FootnoteButton`: UI component for footnote triggers
-    - `FootnotePopup`: Popup display component
-  - Core Modules:
-    - `handlers.js`: Event handling logic
-    - `tiny_foot.js`: Main functionality
-    - `utils.js`: Helper functions
+      The React code implements an interactive footnotes system with hover functionality. Here's the structure breakdown:
+      - Footnote Component:
+        Takes id and content props
+        Renders a superscript element (<sup>) with the footnote number
+        Contains a hidden span that shows content on hover
+      - InteractiveFootnotes Component (Main):
+        Defines footnotes array with content
+      - Uses CSS-in-JSX for styling:
+        Tooltip-like hover effect
+        Absolute positioning for footnote content
+        Visual styling (borders, shadows, etc.)
+      - Renders main text with embedded Footnote components
+        The commented-out FootnoteList component would provide a traditional footnotes list at the bottom, but the current implementation focuses on hover-based interaction instead.
+      - Key features:
+        Footnotes appear on hover without page navigation
+        Tooltip-style presentation
+        Mobile/desktop compatible design
+        CSS-only interaction (no JavaScript state management needed)
 - React Integration:
   - Custom hooks for state management
   - Component-based UI rendering
   - Event delegation through React props
 
-### 3. Code Organization and Quality
+## 3. Code Organization and Quality
 - Clean implementation with React best practices
 - Effective use of:
   - ES6+ features
@@ -45,21 +51,44 @@
   - Could benefit from more comprehensive documentation
   - Test coverage could be expanded for React components
 
-### 4. Repository Organization
-- Well-structured with clear separation of:
-  - React components
-  - Core JavaScript modules
-  - Utility functions
-- Documentation:
-  - README provides basic setup
-  - Could use more React-specific examples
-  - API documentation could be expanded
+## 4. Repository Organization
 - Build tools:
   - Uses npm for package management
   - React development environment
   - Simple build pipeline
+- CI/CD Pipeline Components:
 
-### 5. Implementation Highlights
+    - Trigger: Activates on push to main branch
+    - Steps:
+      - Code checkout
+      - Node.js 14 setup
+      - Dependencies installation
+      - Testing
+      - Build process
+      - Netlify deployment hook
+
+    - Key Benefits:
+      - Automated Testing
+        - Catches bugs early
+        - Ensures code quality
+        - Reduces manual testing effort
+    
+      - Continuous Integration
+        - Frequent code integration
+        - Early conflict detection
+        - Maintains stable codebase
+
+      - Automated Deployment
+        - Reduces human error
+        - Faster release cycles
+        - Consistent deployment process
+
+      - Netlify Integration
+        - Automated hosting updates
+        - Preview deployments
+        - Easy rollbacks
+
+## 5. Implementation Highlights
 - Strengths:
   - Clean React integration
   - Lightweight implementation
@@ -69,17 +98,17 @@
   - Animation system could leverage React transitions
   - More comprehensive React testing
 
-### 6. Usage Decision
+## 6. Usage Decision
 Would I use TinyFoot?
 - Yes, especially for:
   - React-based projects
   - Simple footnote needs
   - Projects requiring custom UI integration
 
-### Final Recommendation
+## Final Recommendation
 TinyFoot successfully combines React's component architecture with basic footnote functionality. While simpler than LittleFoot, it offers good React integration and maintainability. Recommended for React projects needing straightforward footnote implementation.
 
-### Suggested Improvements
+## Suggested Improvements
 1. Documentation Enhancement
    - Add React component API documentation
    - Include React integration examples
