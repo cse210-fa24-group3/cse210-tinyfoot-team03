@@ -118,4 +118,4 @@ Any reluctance would come from minor issues such as limited test coverage and th
 - Added a custom HTML file to demonstrate the footnotes functionality.
 - Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote.
      
----
+

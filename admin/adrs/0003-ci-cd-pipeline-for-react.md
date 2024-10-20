@@ -7,7 +7,7 @@ Accepted
 We developed tinyfoot using React and want to test the application when new code is pushed to the tinyfoot GitHub repository. This can be done through a pipeline to automate and streamline the process. The CI/CD Testing was set up to do this, but deployment must be done quickly to fit within our timeline. 
 
 ## Decision
-We decided to implement the CI/CD test, but the test was consistently failing in the pipeline and is now depreciated.
+We decided to implement the CI/CD test to catch bugs in the git repo.
 
 ## Consequences
 ### Positive
