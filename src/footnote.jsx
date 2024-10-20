@@ -57,7 +57,7 @@ const InteractiveFootnotes = () => {
         }
       `}</style>
 
-      <h3>Interactive Footnotes Example</h3>
+      {/* <h3>Interactive Footnotes Example</h3>÷ */}
       <p>
         This is an example of interactive footnotes
         <Footnote id={1} content={footnotes[0]} />. 
