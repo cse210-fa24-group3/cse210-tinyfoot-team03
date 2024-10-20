@@ -2,6 +2,9 @@
 ### CSE 210 F24: Group Warm-up Exercise: Fun with Footnotes
 <div style="text-align: right"> Team 3 </div>
 
+ [[Bigfoot Repo](https://github.com/cse210-fa24-group3/cse210-bigfoot-team3)]<br>
+ [[Bigfoot Demo](https://bigfoot03.netlify.app/)]
+
 # bigfoot.js Code Review
 
 ## 1. Architecture Overview
@@ -115,4 +118,4 @@ Any reluctance would come from minor issues such as limited test coverage and th
 - Added a custom HTML file to demonstrate the footnotes functionality.
 - Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote.
      
----
+
