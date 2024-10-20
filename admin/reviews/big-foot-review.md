@@ -86,8 +86,8 @@ Any reluctance would come from minor issues such as limited test coverage and th
 
 <table>
     <tr>
-        <td> <img src="img/hover_original.gif" width="250" height="250"/> </td>
-        <td> <img src="img/hover_updated.gif" width="250" height="250"/> </td>
+        <td> <img src="admin/misc/hover_original.gif" width="250" height="250"/> </td>
+        <td> <img src="admin/misc/hover_updated.gif" width="250" height="250"/> </td>
     </tr> 
     <tr>
         <td>Before</td>
@@ -102,8 +102,8 @@ Any reluctance would come from minor issues such as limited test coverage and th
 
 <table>
     <tr>
-        <td> <img src="img/button_original.png" width="600" height="300"/> </td>
-        <td> <img src="img/button_updated.png" width="600" height="300"/> </td>
+        <td> <img src="admin/misc/button_original.png" width="600" height="300"/> </td>
+        <td> <img src="admin/misc/button_updated.png" width="600" height="300"/> </td>
     </tr> 
     <tr>
         <td>Before</td>
