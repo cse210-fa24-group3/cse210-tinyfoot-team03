@@ -16,13 +16,24 @@
 - Pattern: Combines React components with module pattern
 - Modularity: 
   - React Components:
-    - `FootnoteProvider`: Context provider for footnote state
-    - `FootnoteButton`: UI component for footnote triggers
-    - `FootnotePopup`: Popup display component
-  - Core Modules:
-    - `handlers.js`: Event handling logic
-    - `tiny_foot.js`: Main functionality
-    - `utils.js`: Helper functions
+      The React code implements an interactive footnotes system with hover functionality. Here's the structure breakdown:
+      - Footnote Component:
+        Takes id and content props
+        Renders a superscript element (<sup>) with the footnote number
+        Contains a hidden span that shows content on hover
+      - InteractiveFootnotes Component (Main):
+        Defines footnotes array with content
+      - Uses CSS-in-JSX for styling:
+        Tooltip-like hover effect
+        Absolute positioning for footnote content
+        Visual styling (borders, shadows, etc.)
+      - Renders main text with embedded Footnote components
+        The commented-out FootnoteList component would provide a traditional footnotes list at the bottom, but the current implementation focuses on hover-based interaction instead.
+      - Key features:
+        Footnotes appear on hover without page navigation
+        Tooltip-style presentation
+        Mobile/desktop compatible design
+        CSS-only interaction (no JavaScript state management needed)
 - React Integration:
   - Custom hooks for state management
   - Component-based UI rendering
