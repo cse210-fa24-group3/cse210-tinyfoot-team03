@@ -52,18 +52,41 @@
   - Test coverage could be expanded for React components
 
 ## 4. Repository Organization
-- Well-structured with clear separation of:
-  - React components
-  - Core JavaScript modules
-  - Utility functions
-- Documentation:
-  - README provides basic setup
-  - Could use more React-specific examples
-  - API documentation could be expanded
 - Build tools:
   - Uses npm for package management
   - React development environment
   - Simple build pipeline
+- CI/CD Pipeline Components:
+
+    - Trigger: Activates on push to main branch
+    - Steps:
+      - Code checkout
+      - Node.js 14 setup
+      - Dependencies installation
+      - Testing
+      - Build process
+      - Netlify deployment hook
+
+    - Key Benefits:
+      - Automated Testing
+        - Catches bugs early
+        - Ensures code quality
+        - Reduces manual testing effort
+    
+      - Continuous Integration
+        - Frequent code integration
+        - Early conflict detection
+        - Maintains stable codebase
+
+      - Automated Deployment
+        - Reduces human error
+        - Faster release cycles
+        - Consistent deployment process
+
+      - Netlify Integration
+        - Automated hosting updates
+        - Preview deployments
+        - Easy rollbacks
 
 ## 5. Implementation Highlights
 - Strengths:
