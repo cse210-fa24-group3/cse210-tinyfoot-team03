@@ -38,10 +38,17 @@ function App() {
         <div className="container">
       
       <h1 className="title">Tiny Foot</h1>
-      <p>Tiny Foot is a comparison of two modern libraries designed to make footnotes more user-friendly.</p>
+      <h2>CSE 210: FA24 - Team 03</h2>
+      <h3>GitHub Repo: <a href="https://github.com/cse210-fa24-group3"> cse210-fa24-group3</a></h3>
+      
+      
+      <div className="section">
+        <h2>TinyFoot</h2>
+         <p> Tiny Foot is a combination of the two modern libraries designed to make footnotes more user-friendly. Below are the 2 libraries we have drawn inspiration from: </p>
+      </div>
 
       <div className="section">
-        <h2>Bigfoot.js</h2>
+        <h3>Bigfoot.js</h3>
         <p>
           <a href="#fn:1" id="fnref:1" data-footnote-ref>Bigfoot.js</a> is a library that enhances the usability and visual appeal of footnotes by turning them into clickable or hoverable popovers. This feature allows users to read footnotes without scrolling to the bottom of the page, providing a smoother reading experience.
         </p>
@@ -51,7 +58,7 @@ function App() {
       </div>
 
       <div className="section">
-        <h2>Littlefoot.js</h2>
+        <h3>Littlefoot.js</h3>
         <InteractiveFootnotes />
       </div>
 
